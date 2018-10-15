@@ -99,9 +99,13 @@ get_docker() {
 	sudo usermod -aG docker ${me}
 }
 
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install wget curl bzip2 -y
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
 cd ~
 #curl https://gist.githubusercontent.com/Zate/b3c8e18cbb2bbac2976d79525d95f893/raw/acbe81fe161ec194ab9eb30f1bf17f1f79919a45/get_go.sh -o get_go.sh 
 #chmod +x get_go.sh 
