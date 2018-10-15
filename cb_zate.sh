@@ -55,7 +55,7 @@ get_code() {
 	sudo apt-get install code -y
 	sudo apt-get install libxss1 libasound2 -y
 
-	code --install-extension ms-vscode.go
+	code --install-extension waderyan.nodejs-extension-pack
 	code --install-extension PeterJausovec.vscode-docker
 	code --install-extension Zignd.html-css-class-completion
 	code --install-extension ecmel.vscode-html-css
@@ -106,7 +106,7 @@ cd ~
 #curl https://gist.githubusercontent.com/Zate/b3c8e18cbb2bbac2976d79525d95f893/raw/acbe81fe161ec194ab9eb30f1bf17f1f79919a45/get_go.sh -o get_go.sh 
 #chmod +x get_go.sh 
 #./get_go.sh
-get_go
+#get_go
 cd ~
 #curl https://gist.githubusercontent.com/Zate/b3c8e18cbb2bbac2976d79525d95f893/raw/acbe81fe161ec194ab9eb30f1bf17f1f79919a45/get_vscode.sh -o get_vscode.sh 
 #chmod +x get_vscode.sh 
@@ -117,15 +117,15 @@ cd ~
 #sudo rm -rf /usr/bin/firefox
 #sudo mv firefox /opt/firefox
 #sudo ln -s /opt/firefox/firefox /usr/bin/firefox
-go get github.com/nsf/gocode
-go get github.com/uudashr/gopkgs/cmd/gopkgs
-go get github.com/ramya-rao-a/go-outline
-go get github.com/acroca/go-symbols
-go get golang.org/x/tools/cmd/guru
-go get golang.org/x/tools/cmd/gorename
-go get github.com/rogpeppe/godef
-go get github.com/sqs/goreturns
-go get github.com/golang/lint/golint
-go get github.com/derekparker/delve/cmd/dlv
-get_docker
+#go get github.com/nsf/gocode
+#go get github.com/uudashr/gopkgs/cmd/gopkgs
+#go get github.com/ramya-rao-a/go-outline
+#go get github.com/acroca/go-symbols
+#go get golang.org/x/tools/cmd/guru
+#go get golang.org/x/tools/cmd/gorename
+#go get github.com/rogpeppe/godef
+#go get github.com/sqs/goreturns
+#go get github.com/golang/lint/golint
+#go get github.com/derekparker/delve/cmd/dlv
+#get_docker
 get_code
